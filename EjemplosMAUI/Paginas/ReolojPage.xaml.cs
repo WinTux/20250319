@@ -12,7 +12,7 @@ public partial class ReolojPage : ContentPage
         temporizador.Start();
     }
 
-    private void redibujarReloj(object? sender, ElapsedEventArgs e)
+    public void redibujarReloj(object? sender, ElapsedEventArgs e)
     {
         var graphicsView = this.relojGraphicsView;
         graphicsView.Invalidate();
