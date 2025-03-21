@@ -1,5 +1,6 @@
 ﻿using EjemplosMAUI.Paginas;
 using Microsoft.Extensions.Logging;
+using ZXing.Net.Maui;
 
 namespace EjemplosMAUI
 {
@@ -15,10 +16,12 @@ namespace EjemplosMAUI
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.UseBarcodeReader();
             builder.Services.AddTransient<ReolojPage>();
+            builder.Services.AddTransient<ScannerQRPage>();
 
 #if DEBUG
-    		builder.Logging.AddDebug();
+            builder.Logging.AddDebug();
 #endif
 
             return builder.Build();

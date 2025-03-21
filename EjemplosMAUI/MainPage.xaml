@@ -13,6 +13,11 @@
                 Text="Reloj analógico" 
                 Clicked="OnEjemplo1Clic"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="ScannerBtn"
+                Text="Scanner de QR" 
+                Clicked="OnEjemplo2Clic"
+                HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 

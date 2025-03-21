@@ -13,6 +13,10 @@ namespace EjemplosMAUI
         {
             await Shell.Current.GoToAsync(nameof(ReolojPage));
         }
+        private async void OnEjemplo2Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(ScannerQRPage));
+        }
     }
 
 }
