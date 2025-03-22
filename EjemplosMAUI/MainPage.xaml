@@ -18,6 +18,11 @@
                 Text="Scanner de QR" 
                 Clicked="OnEjemplo2Clic"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="DrawingBtn"
+                Text="Dibujo libre" 
+                Clicked="OnEjemplo3Clic"
+                HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 

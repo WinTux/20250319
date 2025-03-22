@@ -7,6 +7,7 @@
             InitializeComponent();
             Routing.RegisterRoute(nameof(Paginas.ReolojPage), typeof(Paginas.ReolojPage));
             Routing.RegisterRoute(nameof(Paginas.ScannerQRPage), typeof(Paginas.ScannerQRPage));
+            Routing.RegisterRoute(nameof(Paginas.DrawingPage), typeof(Paginas.DrawingPage));
         }
     }
 }

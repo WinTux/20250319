@@ -1,4 +1,5 @@
-﻿using EjemplosMAUI.Paginas;
+﻿using CommunityToolkit.Maui;
+using EjemplosMAUI.Paginas;
 using Microsoft.Extensions.Logging;
 using ZXing.Net.Maui;
 using ZXing.Net.Maui.Controls;
@@ -12,6 +13,7 @@ namespace EjemplosMAUI
             var builder = MauiApp.CreateBuilder();
             builder
                 .UseMauiApp<App>()
+                .UseMauiCommunityToolkit()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -25,6 +27,7 @@ namespace EjemplosMAUI
                 });
             builder.Services.AddTransient<ReolojPage>();
             builder.Services.AddTransient<ScannerQRPage>();
+            builder.Services.AddTransient<DrawingPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();
