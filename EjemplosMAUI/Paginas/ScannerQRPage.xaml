@@ -8,10 +8,10 @@
         <zxing:CameraBarcodeReaderView x:Name="lectorCodigo"
                BarcodesDetected="OnCodigoBarrasDetectado"
                IsDetecting="True" IsTorchOn="True"
-               WidthRequest="300" HeightRequest="300"/>
+               WidthRequest="300" HeightRequest="300"
+               />
         <Label 
-            Text="Welcome to .NET MAUI!"
-            VerticalOptions="Center" 
-            HorizontalOptions="Center" />
+            Text="RESULTADO"
+            x:Name="resultadoCodigo" />
     </VerticalStackLayout>
 </ContentPage>
