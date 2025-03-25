@@ -19,6 +19,7 @@ namespace EjemplosMAUI
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                     fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
                 });
+            builder.UseMauiMaps();
             builder.UseBarcodeReader()
                 .ConfigureMauiHandlers(h => {
                     h.AddHandler(typeof(CameraBarcodeReaderView), typeof(CameraBarcodeReaderViewHandler));
@@ -28,6 +29,7 @@ namespace EjemplosMAUI
             builder.Services.AddTransient<ReolojPage>();
             builder.Services.AddTransient<ScannerQRPage>();
             builder.Services.AddTransient<DrawingPage>();
+            builder.Services.AddTransient<MapaPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();

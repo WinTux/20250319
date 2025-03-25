@@ -23,6 +23,11 @@
                 Text="Dibujo libre" 
                 Clicked="OnEjemplo3Clic"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="MapaBtn"
+                Text="Mapa Google" 
+                Clicked="OnEjemplo4Clic"
+                HorizontalOptions="Fill" /> 
         </VerticalStackLayout>
     </ScrollView>
 
