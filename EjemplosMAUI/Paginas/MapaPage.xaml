@@ -7,7 +7,7 @@
              xmlns:ubica="clr-namespace:Microsoft.Maui.Devices.Sensors;assembly=Microsoft.Maui.Essentials"
              >
     <Grid>
-        <mapa:Map x:Name="miMapa" IsShowingUser="True" IsTrafficEnabled="True">
+        <mapa:Map x:Name="miMapa" IsShowingUser="True" IsTrafficEnabled="False" MapType="Satellite" MapClicked="OnMapaCLic">
             <x:Arguments>
                 <mapa:MapSpan>
                     <x:Arguments>
@@ -36,6 +36,70 @@
                     </mapa:Pin.Location>
                 </mapa:Pin>
             </mapa:Map.Pins>
+            <mapa:Map.MapElements>
+                <mapa:Polygon StrokeColor="#ff0087" StrokeWidth="7" FillColor="#89e0ff">
+                    <mapa:Polygon.Geopath>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50163137005852</x:Double>
+                                <x:Double>-68.13298808452176</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501698235110037</x:Double>
+                                <x:Double>-68.13289957162836</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50195797989854</x:Double>
+                                <x:Double>-68.1332160722775</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501834536874238</x:Double>
+                                <x:Double>-68.13328312749977</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Polygon.Geopath>
+                </mapa:Polygon>
+                <mapa:Polyline StrokeColor="#f4dec4" StrokeWidth="12">
+                    <mapa:Polyline.Geopath>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50195373954693</x:Double>
+                                <x:Double>-68.13274545011937</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.501802007481803</x:Double>
+                                <x:Double>-68.13242626726135</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.50123622585047</x:Double>
+                                <x:Double>-68.13278836546162</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.500770740630994</x:Double>
+                                <x:Double>-68.13221437275895</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                        <ubica:Location>
+                            <x:Arguments>
+                                <x:Double>-16.500228101735452</x:Double>
+                                <x:Double>-68.13202930033529</x:Double>
+                            </x:Arguments>
+                        </ubica:Location>
+                    </mapa:Polyline.Geopath>
+                </mapa:Polyline>
+            </mapa:Map.MapElements>
         </mapa:Map>
     </Grid>
 </ContentPage>
