@@ -27,7 +27,12 @@
                 x:Name="MapaBtn"
                 Text="Mapa Google" 
                 Clicked="OnEjemplo4Clic"
-                HorizontalOptions="Fill" /> 
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="MultimediaBtn"
+                Text="Multimedia" 
+                Clicked="OnEjemplo5Clic"
+                HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 

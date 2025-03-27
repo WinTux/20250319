@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemplosMAUI.Paginas.MultimediaPage"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit"
+             Title="Multimedia">
+    <VerticalStackLayout>
+        <Label 
+            Text="Video desde URL"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="AspectFit"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <toolkit:MediaElement 
+            x:Name="video1" 
+            WidthRequest="220" 
+            HeightRequest="170"
+            Source="https://sample-videos.com/video321/mp4/720/big_buck_bunny_720p_1mb.mp4"
+            ShouldAutoPlay="False"
+            ShouldKeepScreenOn="True"
+            ShouldLoopPlayback="True"
+            />
+        <Label 
+            Text="Video (recurso local)"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Label 
+            Text="AspectFill"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <toolkit:MediaElement 
+            x:Name="video2" 
+            WidthRequest="180" 
+            HeightRequest="120"
+            Source="embed://SampleVideo_1280x720_1mb.mp4"
+            ShouldAutoPlay="True"
+            ShouldKeepScreenOn="True"
+            ShouldLoopPlayback="True"
+            Aspect="AspectFill"
+            />
+        <Label 
+            Text="Center"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <toolkit:MediaElement 
+            x:Name="video3" 
+            WidthRequest="180" 
+            HeightRequest="120"
+            Source="embed://SampleVideo_1280x720_1mb.mp4"
+            ShouldAutoPlay="True"
+            ShouldKeepScreenOn="True"
+            ShouldLoopPlayback="True"
+            Aspect="Center"
+            />
+        <Label 
+            Text="Fill"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <toolkit:MediaElement 
+            x:Name="video4" 
+            WidthRequest="180" 
+            HeightRequest="120"
+            Source="embed://SampleVideo_1280x720_1mb.mp4"
+            ShouldKeepScreenOn="True"
+            ShouldLoopPlayback="True"
+            Aspect="Fill"
+            ShouldShowPlaybackControls="False"
+            />
+        <Button x:Name="videoBtn" 
+                Text="Play/Pause" 
+                Clicked="OnPlayPauseClic"
+                HorizontalOptions="Center"/>
+    </VerticalStackLayout>
+</ContentPage>
