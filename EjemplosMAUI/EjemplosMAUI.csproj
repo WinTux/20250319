@@ -78,6 +78,9 @@
 	  <MauiXaml Update="Paginas\MapaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Paginas\Multimedia2Page.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Paginas\MultimediaPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemplosMAUI.Paginas.Multimedia2Page"
+             Title="Sliders"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <VerticalStackLayout>
+        <Label 
+            Text="Ejemplo de sliders"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <toolkit:MediaElement 
+            x:Name="video" 
+            WidthRequest="180" 
+            HeightRequest="120"
+            Source="embed://SampleVideo_1280x720_1mb.mp4"
+            ShouldAutoPlay="False"
+            ShouldKeepScreenOn="True"
+            ShouldLoopPlayback="True"
+            ShouldShowPlaybackControls="False"
+            Aspect="AspectFill"
+            MediaOpened="OnVideoOpened"
+            PositionChanged="OnPosicionCambiada"
+            />
+        <Button x:Name="videoBtn" 
+            Text="Play/Pause" 
+            Clicked="OnPlayPauseClic"
+            HorizontalOptions="Center"/>
+        <Label 
+            Text="Volumen"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Slider x:Name="volumenSlider"
+                Minimum="0"
+                Maximum="1"
+                Value="0"
+                ValueChanged="OnValueChangedClic"/>
+        <Label 
+            Text="Posición"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Slider x:Name="posicionSlider"
+            Minimum="0"
+            Maximum="100"
+            Value="0"
+            ValueChanged="OnValueChangedPosicionClic"/>
+        <Label 
+            Text="Ejemplo de audio"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <toolkit:MediaElement 
+            x:Name="audio" 
+            WidthRequest="180" 
+            HeightRequest="120"
+            Source="embed://sample-12s.mp3"
+            ShouldAutoPlay="True"
+            ShouldShowPlaybackControls="True"
+            />
+        <Label 
+            Text="Volumen"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <Slider x:Name="volumenMP3Slider"
+            Minimum="0"
+            Maximum="1"
+            Value="0"
+            ValueChanged="OnValueChangedmp3Clic"/>
+    </VerticalStackLayout>
+</ContentPage>

@@ -29,6 +29,10 @@ namespace EjemplosMAUI
         {
             await Shell.Current.GoToAsync(nameof(MultimediaPage));
         }
+        private async void OnEjemplo6Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(Multimedia2Page));
+        }
     }
 
 }
