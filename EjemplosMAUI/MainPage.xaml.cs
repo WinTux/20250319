@@ -37,6 +37,10 @@ namespace EjemplosMAUI
         {
             await Shell.Current.GoToAsync(nameof(GridPage));
         }
+        private async void OnEjemplo8Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(Grid2Page));
+        }
     }
 
 }

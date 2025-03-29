@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="EjemplosMAUI.Paginas.Grid2Page"
+             Title="Ejemplo de distribución Grid 2"
+             xmlns:toolkit="http://schemas.microsoft.com/dotnet/2022/maui/toolkit">
+    <ScrollView>
+        <Grid RowDefinitions="1*,Auto,25,14,20"
+              ColumnDefinitions="*,2*,Auto,100">
+            <toolkit:MediaElement 
+                x:Name="video2" 
+                Source="embed://SampleVideo_1280x720_1mb.mp4"
+                ShouldAutoPlay="True"
+                ShouldKeepScreenOn="True"
+                ShouldLoopPlayback="True"
+                WidthRequest="220" 
+                HeightRequest="170"
+                Aspect="Fill"
+                Grid.Row="1"  Grid.Column="2"
+                />
+            <Label Text="Celda (0,1)" Grid.Column="1"/>
+            <Label Text="Celda (1,0)" Grid.Row="1"/>
+            <Label Text="Celda (2,0)" Grid.Row="2"/>
+            <Slider Grid.Row="1" Grid.Column="1" Value="0.5" Rotation="30"/>
+            <Button Grid.Row="0"  Grid.Column="2" Text="ENVIAR"/>
+        </Grid>
+    </ScrollView>
+</ContentPage>

@@ -43,6 +43,11 @@
                 Text="Grid layout" 
                 Clicked="OnEjemplo7Clic"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="Grid2Btn"
+                Text="Grid layout" 
+                Clicked="OnEjemplo8Clic"
+                HorizontalOptions="Fill" /> 
         </VerticalStackLayout>
     </ScrollView>
 
