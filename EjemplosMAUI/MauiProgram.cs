@@ -33,6 +33,7 @@ namespace EjemplosMAUI
             builder.Services.AddTransient<MapaPage>();
             builder.Services.AddTransient<MultimediaPage>();
             builder.Services.AddTransient<Multimedia2Page>();
+            builder.Services.AddTransient<GridPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();

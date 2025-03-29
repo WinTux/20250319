@@ -11,6 +11,7 @@
             Routing.RegisterRoute(nameof(Paginas.MapaPage), typeof(Paginas.MapaPage));
             Routing.RegisterRoute(nameof(Paginas.MultimediaPage), typeof(Paginas.MultimediaPage));
             Routing.RegisterRoute(nameof(Paginas.Multimedia2Page), typeof(Paginas.Multimedia2Page));
+            Routing.RegisterRoute(nameof(Paginas.GridPage), typeof(Paginas.GridPage));
         }
     }
 }

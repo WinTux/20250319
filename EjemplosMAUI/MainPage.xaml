@@ -38,6 +38,11 @@
                 Text="Multimedia (extra)" 
                 Clicked="OnEjemplo6Clic"
                 HorizontalOptions="Fill" />
+            <Button
+                x:Name="GridBtn"
+                Text="Grid layout" 
+                Clicked="OnEjemplo7Clic"
+                HorizontalOptions="Fill" />
         </VerticalStackLayout>
     </ScrollView>
 

@@ -33,6 +33,10 @@ namespace EjemplosMAUI
         {
             await Shell.Current.GoToAsync(nameof(Multimedia2Page));
         }
+        private async void OnEjemplo7Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(GridPage));
+        }
     }
 
 }
