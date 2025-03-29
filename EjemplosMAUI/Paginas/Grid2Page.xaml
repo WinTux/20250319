@@ -14,7 +14,7 @@
                 ShouldKeepScreenOn="True"
                 ShouldLoopPlayback="True"
                 WidthRequest="220" 
-                HeightRequest="170"
+                HeightRequest="470"
                 Aspect="Fill"
                 Grid.Row="1"  Grid.Column="2"
                 />
