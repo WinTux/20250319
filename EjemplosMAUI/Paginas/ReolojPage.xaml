@@ -7,6 +7,10 @@
     <ContentPage.Resources>
         <dibujable:DibujoReloj x:Key="dibujoReloj" />
     </ContentPage.Resources>
-    <GraphicsView x:Name="relojGraphicsView" Drawable="{StaticResource dibujoReloj}"></GraphicsView>
-    
+    <ScrollView>
+        <VerticalStackLayout>
+            <Label Text="Reloj analógico" FontSize="Large" HorizontalOptions="Center" />
+            <GraphicsView x:Name="relojGraphicsView" Drawable="{StaticResource dibujoReloj}"></GraphicsView>
+        </VerticalStackLayout>
+    </ScrollView>
 </ContentPage>
