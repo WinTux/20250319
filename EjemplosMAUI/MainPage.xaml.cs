@@ -41,6 +41,14 @@ namespace EjemplosMAUI
         {
             await Shell.Current.GoToAsync(nameof(Grid2Page));
         }
+        private async void OnEjemplo9Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(ArchivosPage));
+        }
+        private async void OnEjemplo10Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(ImagenAudioPage));
+        }
     }
 
 }

@@ -47,6 +47,16 @@
                 x:Name="Grid2Btn"
                 Text="Grid layout" 
                 Clicked="OnEjemplo8Clic"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="ArchBtn"
+                Text="Archivos" 
+                Clicked="OnEjemplo9Clic"
+                HorizontalOptions="Fill" />
+            <Button
+                x:Name="AudioImagenBtn"
+                Text="Fotos y audio"
+                Clicked="OnEjemplo10Clic"
                 HorizontalOptions="Fill" /> 
         </VerticalStackLayout>
     </ScrollView>

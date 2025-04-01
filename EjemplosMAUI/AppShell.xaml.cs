@@ -13,6 +13,8 @@
             Routing.RegisterRoute(nameof(Paginas.Multimedia2Page), typeof(Paginas.Multimedia2Page));
             Routing.RegisterRoute(nameof(Paginas.GridPage), typeof(Paginas.GridPage));
             Routing.RegisterRoute(nameof(Paginas.Grid2Page), typeof(Paginas.Grid2Page));
+            Routing.RegisterRoute(nameof(Paginas.ArchivosPage), typeof(Paginas.ArchivosPage));
+            Routing.RegisterRoute(nameof(Paginas.ImagenAudioPage), typeof(Paginas.ImagenAudioPage));
         }
     }
 }

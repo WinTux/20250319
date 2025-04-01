@@ -15,6 +15,7 @@ namespace EjemplosMAUI
                 .UseMauiApp<App>()
                 .UseMauiCommunityToolkit()
                 .UseMauiCommunityToolkitMediaElement()
+                .UseMauiCommunityToolkitCamera()
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -35,6 +36,8 @@ namespace EjemplosMAUI
             builder.Services.AddTransient<Multimedia2Page>();
             builder.Services.AddTransient<GridPage>();
             builder.Services.AddTransient<Grid2Page>();
+            builder.Services.AddTransient<ArchivosPage>();
+            builder.Services.AddTransient<ImagenAudioPage>();
 
 #if DEBUG
             builder.Logging.AddDebug();
