@@ -22,9 +22,16 @@
             x:Name="camara"
             IsTorchOn="True"
             WidthRequest="150"
-            HeightRequest="150"/>
+            HeightRequest="170"
+            MediaCaptured="OnTomarFotoToolkitClic"/>
         <Button Text="Tomar foto" 
-            Clicked="OnTomarFotoToolkitClic"
+            Clicked="OnTomarFotoToolkitBtnClic"
             HorizontalOptions="Fill"/>
+        <HorizontalStackLayout HorizontalOptions="Fill">
+            <Button x:Name="btnZi" Clicked="OnZoomInClic" Text="Zoom +" Margin="10,5"/>
+            <Button x:Name="btnF" Clicked="OnFlashClic" Text="Linterna" Margin="0,5"/>
+            <Button x:Name="btnZo" Clicked="OnZoomOutClic" Text="Zoom -" Margin="10,5"/>
+        </HorizontalStackLayout>
+        <Label x:Name="lblInfoFlash"  Text=""/>
     </VerticalStackLayout>
 </ContentPage>

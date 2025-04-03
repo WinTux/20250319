@@ -1,6 +1,7 @@
 ﻿using CommunityToolkit.Maui;
 using EjemplosMAUI.Paginas;
 using Microsoft.Extensions.Logging;
+using Plugin.Maui.Audio;
 using ZXing.Net.Maui;
 using ZXing.Net.Maui.Controls;
 
@@ -16,6 +17,7 @@ namespace EjemplosMAUI
                 .UseMauiCommunityToolkit()
                 .UseMauiCommunityToolkitMediaElement()
                 .UseMauiCommunityToolkitCamera()
+                
                 .ConfigureFonts(fonts =>
                 {
                     fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
@@ -38,6 +40,8 @@ namespace EjemplosMAUI
             builder.Services.AddTransient<Grid2Page>();
             builder.Services.AddTransient<ArchivosPage>();
             builder.Services.AddTransient<ImagenAudioPage>();
+            builder.Services.AddTransient<MicrofonoPage>();
+            builder.Services.AddSingleton(AudioManager.Current);
 
 #if DEBUG
             builder.Logging.AddDebug();

@@ -49,6 +49,10 @@ namespace EjemplosMAUI
         {
             await Shell.Current.GoToAsync(nameof(ImagenAudioPage));
         }
+        private async void OnEjemplo11Clic(object sender, EventArgs e)
+        {
+            await Shell.Current.GoToAsync(nameof(MicrofonoPage));
+        }
     }
 
 }

@@ -34,5 +34,7 @@
   <string>La aplicación quiere usar tu ubicación siempre</string>
   <key>NSLocationWhenInUseUsageDescription</key>
   <string>La aplicación quiere suar tu ubicación mientras esté en uso</string>
+  <key>NSMicrophoneUsageDescription</key>
+  <string>La aplicación quiere usar tu micrófono</string>
 </dict>
 </plist>
