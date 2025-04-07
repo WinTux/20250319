@@ -13,12 +13,12 @@ public partial class MicrofonoPage : ContentPage
 		this.audioRecorder = audioManager.CreateRecorder();
 	}
 	private async void OnGrabarClic(object sender, EventArgs e) {
-		if (await Permissions.RequestAsync<Permissions.Microphone> != PermissionStatus.Granted)
+		if (await Permissions.RequestAsync<Permissions.Microphone>() != PermissionStatus.Granted)
 			return;
 		if (audioRecorder.IsRecording)
 		{
 			var audioGrabado = await audioRecorder.StopAsync();
-			GrabarBtn.Text = "Grabar";
+            GrabarBtn.Text = "Grabar";
 			var reproductor = AudioManager.Current.CreatePlayer(audioGrabado.GetAudioStream());
 			reproductor.Play();
 		}
