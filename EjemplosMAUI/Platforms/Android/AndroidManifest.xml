@@ -6,7 +6,7 @@
       android:value="@integer/google_play_services_version"/>
     <meta-data
       android:name="com.google.android.geo.API_KEY"
-      android:value="AIzaSyBxpwiOeOmkAY5WixaXyX0j2ISBvoyowBY" />
+      android:value="xxx" />
   </application>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 	<uses-permission android:name="android.permission.INTERNET" />
